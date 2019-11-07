@@ -39,6 +39,8 @@ body {
 
 .nav-wrap ul {
   padding: 0;
+    transition: all .07s ease;
+
 }
 
 .nav-wrap  ul  li {
@@ -48,10 +50,13 @@ body {
   box-sizing: border-box;
   background: #999;
   margin-bottom: 1px;
+  border-right: 8px solid #bbb96b;
 }
 
 .nav-wrap > ul > li {
   background: rgba(102, 145, 118, 0.63);
+  padding: 10px 20px;
+  border: none;
 }
 
 

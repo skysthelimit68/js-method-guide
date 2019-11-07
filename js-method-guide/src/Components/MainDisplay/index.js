@@ -6,9 +6,17 @@ class MainDisplay extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+        dataType : null,
+        goal : null
     };
   }
+
+componentDidMount() {
+    this.setState({
+        dataType : this.props.dataType,
+        goal : this.props.goal
+    })
+}
 
   render() {
     let d = new Date();
