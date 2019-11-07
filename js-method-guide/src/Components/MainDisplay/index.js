@@ -13,12 +13,10 @@ class MainDisplay extends React.Component {
     return (
       <div className="display-wrap">
         {Methods.map(method => (
-            <Card method = {method} />
-        ))}      
+          <Card method={method} />
+        ))}
         <p className="copyright">© Copyright {d.getFullYear()} Ming Liu</p>
-
-      </div>      
-
+      </div>
     );
   }
 }
