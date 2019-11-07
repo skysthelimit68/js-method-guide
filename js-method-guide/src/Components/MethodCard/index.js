@@ -28,6 +28,7 @@ class MethodCard extends React.Component {
         let close_class = this.state.active? "close-button" : "hide-close-button";
         return(
             <div className={method_class} key={this.props.method.id} onClick={this.active_click}>
+                <div className="card-icon">{this.props.method.dataType.slice(0,1).toUpperCase()}</div>
                 <div className={close_class} onClick={this.close_button}>X</div>
                 <h2>{this.props.method.name}</h2>
                 <div className="divider"></div>
